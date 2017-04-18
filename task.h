@@ -4,7 +4,7 @@
 class Task {
 public:
     Task(void (*fn_ptr)(void*), void* arg);
-    ~Task;
+    ~Task();
     void run();
 private:
     void (*m_fn_ptr)(void*);     //function

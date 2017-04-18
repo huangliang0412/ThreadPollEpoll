@@ -12,7 +12,7 @@ public:
     int lock();
     int unlock();
     
-    pthread_mutex_t* getMutexptr() const;
+    pthread_mutex_t* getMutexptr();
 private:
     pthread_mutex_t m_lock;
     volatile bool is_lock;

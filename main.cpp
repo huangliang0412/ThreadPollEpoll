@@ -23,7 +23,8 @@ ARG* read_message(int fd) {
         errExit("recv error");
     ARG* data = new ARG;
     data->connfd = fd;
-    data->message = num;
+    //data->message = num;
+    strcpy(data->message, recvbuf);
     return data;
 }
 
@@ -32,7 +33,7 @@ void handler(void* arg) {
     int length = strlen(messageDate->message);
     char reverseDate[MAXDATASIZE];
     for(int i= 0; i < length-1; ++i) {
-       reverseDate[i] = messageDate[length-i -2];
+       reverseDate[i] = messageDate->message[length-i -2];
     }
     reverseDate[length-1] = '\0';
     send(messageDate->connfd, reverseDate, strlen(reverseDate), 0);
@@ -60,7 +61,7 @@ int main(int argc, char *argv[])
     while(true)
     {
 
-          nfds = SocketEpoll->WaitEvent();
+          nfds = SocketEpoll->WaitEvent(-1);
           for(int i = 0; i < nfds; ++i) {
               if(SocketEpoll->getEventDataFd(i) == listenfd.m_sockfd) {
                   connectfd = listenfd.Accept();

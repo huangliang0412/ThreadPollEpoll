@@ -7,5 +7,5 @@ Task::Task(void (*fn_ptr)(void *), void *arg)
 Task::~Task() {}
 
 void Task::run() {
-    (*m_fn_ptr)(arg);
+    (*m_fn_ptr)(m_arg);
 }

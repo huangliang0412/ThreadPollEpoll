@@ -32,5 +32,5 @@ int Mutex::unlock()
 }
 
 pthread_mutex_t* Mutex::getMutexptr() {
-    
+    return &m_lock;
 }

@@ -40,7 +40,7 @@ public:
         return m_sockfd;
     }
 
-    void setSockFd(int sockfd) const {
+    void setSockFd(int sockfd)  {
         m_sockfd = sockfd;
     }
 

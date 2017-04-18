@@ -1,6 +1,6 @@
 //#ifndef ERREXIT_H
 //#define ERREXIT_H
-#pragma
+#pragma once
 #include <iostream>
 #include <errno.h>
 #include <string>
