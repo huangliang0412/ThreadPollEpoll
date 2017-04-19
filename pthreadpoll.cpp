@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "pthreadpoll.h"
 
 using namespace std;
@@ -17,6 +18,8 @@ ThreadPoll::~ThreadPoll() {
 extern "C"
 void* start_thread(void* arg) {
     ThreadPoll* tp = (ThreadPoll*) arg;
+    cout << "start" << endl;
+    fflush(stdout);
     tp->excute_thread();
     return NULL;
 }
@@ -59,14 +62,16 @@ void* ThreadPoll::excute_thread() {
     while(true) {
         m_task_mutex.lock();
         while((m_pool_state != STOP) && m_task.empty()) {
+        //    cout << "zuse" << endl;
             m_task_convar.waitCond(m_task_mutex.getMutexptr());
+        //    cout << "cond var" << endl;
         }
 
         if(m_pool_state == STOP) {
             m_task_mutex.unlock();
             pthread_exit(NULL);
         }
-
+        //cout << "condvar1" << endl;
         task = m_task.front();
         m_task.pop_front();
         m_task_mutex.unlock();
@@ -81,7 +86,12 @@ int ThreadPoll::add_task(Task *task) {
 
     m_task.push_back(task);
 
-    m_task_convar.signal();    //wake up one thread
-
+    //m_task_convar.signal();    //wake up one thread
+    m_task_convar.broadcast();
     m_task_mutex.unlock();
+}
+
+void ThreadPoll::print_pid() {
+    for(int i = 0; i < m_thread.size(); ++i)
+        cout << m_thread[i] << endl;
 }

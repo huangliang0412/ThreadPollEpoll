@@ -22,6 +22,7 @@ public:
     int destroy_threadpoll();
     void* excute_thread();
     int add_task(Task* task);
+    void print_pid();
 
 
 private:

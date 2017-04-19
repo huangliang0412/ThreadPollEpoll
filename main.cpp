@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include "tcpsocket.h"
 #include "epoll.h"
 #include "pthreadpoll.h"
@@ -13,14 +14,17 @@ struct ARG {
 ARG* read_message(int fd) {
     char recvbuf[MAXDATASIZE];
     int num;
-    while((num = ::recv(fd, recvbuf, MAXDATASIZE, 0))) {
+    //while (num = ::recv(fd, recvbuf, MAXDATASIZE, 0))
+    //while(true) {
+        num = ::recv(fd, recvbuf, MAXDATASIZE, 0);
         recvbuf[num] = '\0';
-        printf("Receive client message: %s", recvbuf);
-    }
-    if(num == 0)
-        errExit("client has closed");
-    if(num < 0)
-        errExit("recv error");
+        printf("Receive client message %s\n", recvbuf);
+
+        if (num == 0)
+            errExit("client has closed");
+        if (num < 0)
+            errExit("recv error");
+   // }
     ARG* data = new ARG;
     data->connfd = fd;
     //data->message = num;
@@ -42,9 +46,12 @@ void handler(void* arg) {
 
 int main(int argc, char *argv[])
 {
+    cout << "hello world" << endl;
     TcpSocket listenfd, connectfd;
     Epoll* SocketEpoll = new Epoll;
     ThreadPoll* tPoll = new ThreadPoll;
+    tPoll->initialize_threadpoll();
+    tPoll->print_pid();
     ARG* data;
     int nfds;
     SocketEpoll->EpollCreat(5);
@@ -81,6 +88,5 @@ int main(int argc, char *argv[])
       //  connectfd.Recv();
     //}
     //cout << "Hello World!" << endl;
-
     return 0;
 }

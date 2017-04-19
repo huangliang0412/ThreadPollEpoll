@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,35 +23,35 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3234909814/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3234909814.dir/build.make CMakeFiles/cmTryCompileExec3234909814.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3234909814.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3234909814.dir/testCCompiler.c.o   -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec3234909814
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3234909814.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3234909814.dir/testCCompiler.c.o  -o cmTryCompileExec3234909814 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec754881883/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec754881883.dir/build.make CMakeFiles/cmTryCompileExec754881883.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec754881883.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec754881883.dir/testCCompiler.c.o   -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec754881883
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec754881883.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec754881883.dir/testCCompiler.c.o  -o cmTryCompileExec754881883 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3690112304/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3690112304.dir/build.make CMakeFiles/cmTryCompileExec3690112304.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec3690112304
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3690112304.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3690112304 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec581810293/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec581810293.dir/build.make CMakeFiles/cmTryCompileExec581810293.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec581810293
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec581810293.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec581810293 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3690112304' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3690112304 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec581810293' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec581810293 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3690112304/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3690112304.dir/build.make CMakeFiles/cmTryCompileExec3690112304.dir/build]
-  ignore line: [make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec3690112304]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3690112304.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3690112304 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec581810293/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec581810293.dir/build.make CMakeFiles/cmTryCompileExec581810293.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec581810293]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec581810293.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec581810293 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -88,8 +88,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3690112304' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3690112304 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec581810293' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec581810293 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -103,7 +103,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3690112304] ==> ignore
+    arg [cmTryCompileExec581810293] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec3690112304.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec581810293.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -147,18 +147,18 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1487733609/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1487733609.dir/build.make CMakeFiles/cmTryCompileExec1487733609.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1487733609.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec1487733609.dir/feature_tests.c.o   -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec1487733609
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1487733609.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec1487733609.dir/feature_tests.c.o  -o cmTryCompileExec1487733609 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2518501829/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2518501829.dir/build.make CMakeFiles/cmTryCompileExec2518501829.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2518501829.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2518501829.dir/feature_tests.c.o   -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2518501829
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2518501829.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2518501829.dir/feature_tests.c.o  -o cmTryCompileExec2518501829 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -168,18 +168,18 @@ make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/C
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec792365966/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec792365966.dir/build.make CMakeFiles/cmTryCompileExec792365966.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec792365966.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec792365966.dir/feature_tests.c.o   -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec792365966
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec792365966.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec792365966.dir/feature_tests.c.o  -o cmTryCompileExec792365966 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3101784932/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3101784932.dir/build.make CMakeFiles/cmTryCompileExec3101784932.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3101784932.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec3101784932.dir/feature_tests.c.o   -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3101784932
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3101784932.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3101784932.dir/feature_tests.c.o  -o cmTryCompileExec3101784932 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,18 +189,18 @@ make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/C
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2489698500/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2489698500.dir/build.make CMakeFiles/cmTryCompileExec2489698500.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2489698500.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec2489698500.dir/feature_tests.c.o   -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2489698500
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2489698500.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2489698500.dir/feature_tests.c.o  -o cmTryCompileExec2489698500 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1559076653/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1559076653.dir/build.make CMakeFiles/cmTryCompileExec1559076653.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1559076653.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec1559076653.dir/feature_tests.c.o   -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1559076653
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1559076653.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1559076653.dir/feature_tests.c.o  -o cmTryCompileExec1559076653 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -208,32 +208,32 @@ make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/C
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3081175993/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3081175993.dir/build.make CMakeFiles/cmTryCompileExec3081175993.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3081175993.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3081175993.dir/testCXXCompiler.cxx.o -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec3081175993
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3081175993.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3081175993.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3081175993 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3797524089/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3797524089.dir/build.make CMakeFiles/cmTryCompileExec3797524089.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3797524089.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3797524089.dir/testCXXCompiler.cxx.o -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3797524089
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3797524089.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3797524089.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3797524089 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2998523900/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2998523900.dir/build.make CMakeFiles/cmTryCompileExec2998523900.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec2998523900
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2998523900.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2998523900 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec502444740/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec502444740.dir/build.make CMakeFiles/cmTryCompileExec502444740.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec502444740
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec502444740.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec502444740 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -243,24 +243,24 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2998523900' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2998523900 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec502444740' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec502444740 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2998523900/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2998523900.dir/build.make CMakeFiles/cmTryCompileExec2998523900.dir/build]
-  ignore line: [make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec2998523900]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2998523900.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2998523900 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec502444740/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec502444740.dir/build.make CMakeFiles/cmTryCompileExec502444740.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec502444740]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec502444740.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec502444740 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -270,8 +270,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2998523900' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2998523900 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec502444740' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec502444740 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -285,7 +285,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2998523900] ==> ignore
+    arg [cmTryCompileExec502444740] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -297,7 +297,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec2998523900.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec502444740.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -327,18 +327,18 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1839848371/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1839848371.dir/build.make CMakeFiles/cmTryCompileExec1839848371.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1839848371.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec1839848371.dir/feature_tests.cxx.o -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec1839848371
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1839848371.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1839848371.dir/feature_tests.cxx.o  -o cmTryCompileExec1839848371 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec508591345/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec508591345.dir/build.make CMakeFiles/cmTryCompileExec508591345.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec508591345.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec508591345.dir/feature_tests.cxx.o -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec508591345
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec508591345.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec508591345.dir/feature_tests.cxx.o  -o cmTryCompileExec508591345 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -401,18 +401,18 @@ make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/C
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec738917068/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec738917068.dir/build.make CMakeFiles/cmTryCompileExec738917068.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec738917068.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec738917068.dir/feature_tests.cxx.o -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec738917068
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec738917068.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec738917068.dir/feature_tests.cxx.o  -o cmTryCompileExec738917068 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec893673756/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec893673756.dir/build.make CMakeFiles/cmTryCompileExec893673756.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec893673756.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec893673756.dir/feature_tests.cxx.o -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec893673756
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec893673756.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec893673756.dir/feature_tests.cxx.o  -o cmTryCompileExec893673756 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -475,18 +475,18 @@ make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/C
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp
+Change Dir: /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3105509225/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3105509225.dir/build.make CMakeFiles/cmTryCompileExec3105509225.dir/build
-make[1]: 正在进入目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3105509225.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec3105509225.dir/feature_tests.cxx.o -c /home/huangliang/EpollPthreadPoll/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec3105509225
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3105509225.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3105509225.dir/feature_tests.cxx.o  -o cmTryCompileExec3105509225 -rdynamic 
-make[1]:正在离开目录 `/home/huangliang/EpollPthreadPoll/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2401468670/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2401468670.dir/build.make CMakeFiles/cmTryCompileExec2401468670.dir/build
+make[1]: 正在进入目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2401468670.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec2401468670.dir/feature_tests.cxx.o -c /home/huangliang/PthreadPollEpoll/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2401468670
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2401468670.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2401468670.dir/feature_tests.cxx.o  -o cmTryCompileExec2401468670 -rdynamic 
+make[1]:正在离开目录 `/home/huangliang/PthreadPollEpoll/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

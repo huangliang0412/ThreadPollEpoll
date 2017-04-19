@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/huangliang/EpollPthreadPoll/condvar.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/condvar.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/epoll.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/epoll.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/main.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/main.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/mutex.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/mutex.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/pthreadpoll.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/task.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/task.cpp.o"
-  "/home/huangliang/EpollPthreadPoll/tcpsocket.cpp" "/home/huangliang/EpollPthreadPoll/build/CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/condvar.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/condvar.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/epoll.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/epoll.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/main.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/main.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/mutex.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/mutex.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/pthreadpoll.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/task.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/task.cpp.o"
+  "/home/huangliang/PthreadPollEpoll/tcpsocket.cpp" "/home/huangliang/PthreadPollEpoll/build/CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
