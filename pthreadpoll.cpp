@@ -60,21 +60,21 @@ int ThreadPoll::destroy_threadpoll() {
 void* ThreadPoll::excute_thread() {
     Task* task = NULL;
     while(true) {
-        m_task_mutex.lock();
+        m_cond_mutex.lock();
         while((m_pool_state != STOP) && m_task.empty()) {
-        //    cout << "zuse" << endl;
-            m_task_convar.waitCond(m_task_mutex.getMutexptr());
-        //    cout << "cond var" << endl;
+            //  m_task_convar.waitCond(m_task_mutex.getMutexptr());
+            m_task_convar.waitCond(m_cond_mutex.getMutexptr());
         }
 
         if(m_pool_state == STOP) {
-            m_task_mutex.unlock();
+            //m_task_mutex.unlock();
+            m_cond_mutex.unlock();
             pthread_exit(NULL);
         }
-        //cout << "condvar1" << endl;
         task = m_task.front();
         m_task.pop_front();
-        m_task_mutex.unlock();
+        //m_task_mutex.unlock();
+        m_cond_mutex.unlock();
         task->run();
         delete task;
     }
@@ -83,15 +83,20 @@ void* ThreadPoll::excute_thread() {
 
 int ThreadPoll::add_task(Task *task) {
     m_task_mutex.lock();
-
     m_task.push_back(task);
 
-    //m_task_convar.signal();    //wake up one thread
-    m_task_convar.broadcast();
     m_task_mutex.unlock();
+    m_task_convar.signal();    //wake up one thread
+    //m_task_convar.broadcast();
+    //m_task_mutex.unlock();
 }
 
 void ThreadPoll::print_pid() {
     for(int i = 0; i < m_thread.size(); ++i)
         cout << m_thread[i] << endl;
+}
+
+void ThreadPoll::pthreads_join() {
+    for(int i = 0; i < m_thread.size(); ++i)
+        pthread_join(m_thread[i], NULL);
 }

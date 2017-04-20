@@ -23,11 +23,13 @@ public:
     void* excute_thread();
     int add_task(Task* task);
     void print_pid();
+    void pthreads_join();
 
 
 private:
     int m_pool_size;
     Mutex m_task_mutex;
+    Mutex m_cond_mutex;
     CondVar m_task_convar;
     std::vector<pthread_t> m_thread;     //store pthread_id
     std::deque<Task*> m_task;

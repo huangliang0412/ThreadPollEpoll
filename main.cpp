@@ -14,15 +14,17 @@ struct ARG {
 ARG* read_message(int fd) {
     char recvbuf[MAXDATASIZE];
     int num;
-    //while (num = ::recv(fd, recvbuf, MAXDATASIZE, 0))
-    //while(true) {
-        num = ::recv(fd, recvbuf, MAXDATASIZE, 0);
+    while ((num = ::recv(fd, recvbuf, MAXDATASIZE, 0)) > 0) {
+        //while(true) {
+        //num = ::recv(fd, recvbuf, MAXDATASIZE, 0);
         recvbuf[num] = '\0';
         printf("Receive client message %s\n", recvbuf);
-
+    }
         if (num == 0)
             errExit("client has closed");
-        if (num < 0)
+       // if (num < 0 && (errno == EAGAIN || errno ==EWOULDBLOCK))
+            //return;
+        if(num < 0 && (errno != EAGAIN))
             errExit("recv error");
    // }
     ARG* data = new ARG;
@@ -35,11 +37,12 @@ ARG* read_message(int fd) {
 void handler(void* arg) {
     ARG* messageDate = (ARG*) arg;
     int length = strlen(messageDate->message);
+    //cout << length << endl;
     char reverseDate[MAXDATASIZE];
-    for(int i= 0; i < length-1; ++i) {
-       reverseDate[i] = messageDate->message[length-i -2];
+    for(int i= 0; i < length; ++i) {
+       reverseDate[i] = messageDate->message[length-i-1];
     }
-    reverseDate[length-1] = '\0';
+    reverseDate[length] = '\0';
     send(messageDate->connfd, reverseDate, strlen(reverseDate), 0);
     delete messageDate;
 }
@@ -81,6 +84,16 @@ int main(int argc, char *argv[])
                   tPoll->add_task(t);
               }
           }
+          //tPoll->pthreads_join();
+
+
+
+
+
+
+
+
+
 
     }
     //while(1) {

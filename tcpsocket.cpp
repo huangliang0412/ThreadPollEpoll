@@ -89,7 +89,7 @@ int TcpSocket::Recv() const {
     int num;
     while((num = ::recv(m_sockfd, recvbuf, MAXDATASIZE, 0))) {
         recvbuf[num] = '\0';
-        printf("Receive client message&&&&&&&&&&&&&&: %s\n", recvbuf);
+        printf("Receive client message: %s\n", recvbuf);
     }
     if(num == 0)
         errExit("client has closed\n");

@@ -7,7 +7,6 @@
 #include <string.h>
 inline int errExit(std::string errostring) {
     std::cout << errostring << std::endl;
-    std::cout << "%%%%%%%%%%%%%%%%%%%%%%" << std::endl;
     std::cout << strerror(errno) << std::endl;
     return -1;
 }

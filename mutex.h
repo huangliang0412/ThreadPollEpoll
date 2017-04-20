@@ -13,6 +13,8 @@ public:
     int unlock();
     
     pthread_mutex_t* getMutexptr();
+    bool getIs_lock();
+
 private:
     pthread_mutex_t m_lock;
     volatile bool is_lock;
