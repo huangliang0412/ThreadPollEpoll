@@ -20,6 +20,24 @@ int Epoll::AddEpollList(int fd) const {
     return 0;
 }
 
+int Epoll::ModWriteEpollList(int fd) const {
+    struct epoll_event ev;
+    ev.events = EPOLLOUT;
+    ev.data.fd = fd;
+    if(epoll_ctl(epoll_fd, EPOLL_CTL_MOD, fd, &ev) == -1)
+        errExit("modify write event failed");
+    return 0;
+}
+
+int Epoll::ModReadEpollList(int fd) const {
+    struct epoll_event ev;
+    ev.events = EPOLLIN;
+    ev.data.fd = fd;
+    if(epoll_ctl(epoll_fd, EPOLL_CTL_MOD, fd, &ev) == -1)
+        errExit("modify read event failed");
+    return 0;
+}
+
 int Epoll::WaitEvent(int timout) {
     //struct epoll_event evlist[MAX_EVENTS];
     int ready;
@@ -35,7 +53,7 @@ int Epoll::WaitEvent(int timout) {
         errExit("beyond time");
 
     for(int j = 0; j < ready; ++j) {
-        if(evlist[j].events & EPOLLIN)
+        //if(evlist[j].events & EPOLLIN)
             readyFd.push(evlist[j].data.fd);
     }
     return ready;
@@ -43,4 +61,12 @@ int Epoll::WaitEvent(int timout) {
 
 int Epoll::getEventDataFd(int n) {
     return evlist[n].data.fd;
+}
+
+bool Epoll::isReadAvailable(int n) {
+    return evlist[n].events & EPOLLIN ? true : false;
+}
+
+bool Epoll::isWriteAvailable(int n) {
+    return evlist[n].events & EPOLLOUT ? true : false;
 }
