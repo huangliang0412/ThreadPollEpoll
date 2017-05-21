@@ -115,27 +115,30 @@ char* Httpd::accept_request(char *data) {
 }
 /* 返回　400 */
 void Httpd::bad_request(char* buf) {
-    char* temp = "HTTP/1.1 400 BAD REQUEST\n"
+    char* temp = "HTTP/1.1 400 BAD REQUEST\r\n"
             "Content-type: text/html\r\n"
-            "<p>Your browser sent a bad request</p>\n";
+            "\r\n"
+            "<p>Your browser sent a bad request</p>\r\n";
     strcpy(buf, temp);
 }
 
 /* 返回500 */
 void Httpd::server_innererror(char* buf) {
     //char buf[BUF_MAX_SIZE] =
-    char* temp = "HTTP/1.1 500 Internal Server Error\n"
+    char* temp = "HTTP/1.1 500 Internal Server Error\r\n"
             "Content-type: text/html\r\n"
-            "<p>Server error</p>\n";
+            "\r\n"
+            "<p>Server error</p>\r\n";
     strcpy(buf, temp);
 }
 
 /* 返回404 */
 void Httpd::not_found(char* buf) {
-    char* temp = "HTTP/1.1 404 NOT FOUND\n"
-            "Server: huangliang's Server\n"
-            "Content-Type: text/html\n"
-            "<html><title>Not Found</title></html>\n";
+    char* temp = "HTTP/1.1 404 NOT FOUND\r\n"
+            "Server: huangliang's Server\r\n"
+            "Content-Type: text/html\r\n"
+            "\r\n"
+            "<html><title>Not Found</title></html>\r\n";
     strcpy(buf, temp);
     //return buf;
 }
@@ -154,9 +157,10 @@ void Httpd::read_htmlfile(FILE *fp, char* result_buf) {
     //    perror("open file error");
     //    return;
     //}
-    char* success_header = "HTTP/1.1 200 OK\n"
-            "Server: huangliang's Server\n"
-            "Content-Type: text/html\r\n";
+    char* success_header = "HTTP/1.1 200 OK\r\n"
+            "Server: huangliang's Server\r\n"
+            "Content-Type: text/html\r\n"
+            "\r\n";
     size_t len = strlen(success_header);
     strncpy(result_buf, success_header, len);
     while(!feof(fp)) {
