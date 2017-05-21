@@ -17,7 +17,7 @@ set(SOURCE_FILES
         task.cpp
         task.h
         tcpsocket.cpp
-        tcpsocket.h)
+        tcpsocket.h httpd.h httpd.cpp)
 
 add_executable(EpollPthreadPoll ${SOURCE_FILES})
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} pthread)

@@ -6,7 +6,7 @@
 //#include <>
 #include "errexit.h"
 using namespace std;
-const int MAXDATASIZE = 100;
+const int MAXDATASIZE = 1024;
 struct ARG {
     int connfd;
     char message[MAXDATASIZE];
@@ -112,21 +112,15 @@ int main(int argc, char *argv[])
               }
           }
           //tPoll->pthreads_join();
-
-
-
-
-
-
-
-
-
-
     }
     //while(1) {
     //cout << "Hello World!" << endl;
       //  connectfd.Recv();
     //}
     //cout << "Hello World!" << endl;
+    delete(tPoll);
+    tPoll = NULL;
+    delete(SocketEpoll);
+    SocketEpoll = NULL;
     return 0;
 }
