@@ -17,6 +17,9 @@
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//No help, variable specified on the command line.
+CMAKE_BUID_TYPE:UNINITIALIZED=Debug
+
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
 CMAKE_BUILD_TYPE:STRING=

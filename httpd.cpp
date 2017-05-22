@@ -118,9 +118,11 @@ char* Httpd::accept_request(char *data) {
             static_html(path, result_buf);
 
         }
-        //else
+        else {
             /*　执行cgi 程序*/
-           // execute_cgi(path, method, query_string, result_buf);
+            //printf("excute cgi 程序\n");
+            execute_cgi(path, method, query_string, result_buf, data);
+        }
     }
 
     return result_buf;
@@ -204,22 +206,39 @@ void Httpd::static_html(const char* filename, char* result_buf) {
 }
 
 void Httpd::execute_cgi(const char* path, const char *method,
-        const char* query_string, char* result_buf) {
-
+        const char* query_string, char* result_buf, char* data) {
+    //printf("start");
     char buf[BUF_MAX_SIZE];
+    char tempbuf[BUF_MAX_SIZE];
     int cgi_output[2];
     int cgi_input[2];
     pid_t pid;
     int status;
     int numchars = 1;
     int content_length = -1;
-
+    //buf[0] = 'A'; buf[1] = '\0';
+    /*/
     if(strcasecmp(method, "GET") == 0) {
         while ((numchars > 0) && strcmp("\n", buf))
-            /*  */
-    }
-    else if(strcasecmp(method, "POST") == 0) {
-
+            //get_line()
+    } 本方法不需要这么做
+    else */
+     if(strcasecmp(method, "POST") == 0) {
+         content_length = 12;
+         /*
+        numchars = get_line(&data, buf);
+         while((numchars > 0) && (buf != NULL)) {
+             buf[15] = '\0';
+             //获取http消息传输长度
+             if(strcasecmp(buf, "Content-Length:") == 0)
+                 content_length = atoi(&(buf[16]));
+             numchars = get_line(&data, buf);  //读/r/n这一行,　data将指向报文主体
+         }
+          */
+         if(content_length == -1) {
+             bad_request(result_buf);
+             return;
+         }
         /*
         numchars = get_line()
 
@@ -228,6 +247,7 @@ void Httpd::execute_cgi(const char* path, const char *method,
     }
     else {
         //其他http方法
+         printf("other ways\n");
     }
 
     if(pipe(cgi_output) < 0) {
@@ -249,6 +269,7 @@ void Httpd::execute_cgi(const char* path, const char *method,
     //success_header();
 
     if(pid == 0) {
+        //printf("child progress\n");
         char meth_env[255];
         char query_env[255];
         char length_env[255];
@@ -271,6 +292,7 @@ void Httpd::execute_cgi(const char* path, const char *method,
             sprintf(length_env, "CONTENT_LENGTH=%d", content_length);
             putenv(length_env);
         }
+       // printf("child progress\n");
         // 最后，子进程使用exec函数簇，调用外部脚本来执行
         execl(path,path,NULL);
         exit(0);
@@ -280,19 +302,27 @@ void Httpd::execute_cgi(const char* path, const char *method,
         close(cgi_output[1]);
         close(cgi_input[0]);
         /* 如果是POST方法, 继续读取写入到cgi_input管道, 这是子进程会从此管道读取 */
-        if (strcasecmp(method, "POST") == 0)
+        if (strcasecmp(method, "POST") == 0) {
+            //printf("befor: %s\n", buf);
+            //get_line(&data, buf);   //读报文主体
+            //printf("after: %s\n", buf);
             //for (size_t i = 0; i < content_length; i++) {
-               // recv(client, &c, 1, 0);
-                write(cgi_input[1], &c, 1);
-            }
+            //recv(client, &c, 1, 0);
+            strcpy(buf, "color=yellow");
+            write(cgi_input[1], buf, strlen(buf));
+        }
         /* 从cgi_output管道中读取子进程的输出, 发送给客户端 */
-        while (read(cgi_output[0], result_buf, sizeof(result_buf)) > 0)
+        while (read(cgi_output[0], tempbuf, BUF_MAX_SIZE) > 0)
+            addHttpHeader(result_buf, tempbuf);
+            printf("%s\n", result_buf);
             //send(client, &c, 1, 0);
-        /* 关闭管道 */
-        close(cgi_output[0]);
+            /* 关闭管道 */
+
+            close(cgi_output[0]);
         close(cgi_input[1]);
         /* 等待子进程退出 */
         waitpid(pid, &status, 0);
+    }
 }
 
 void Httpd::unimplemented(char* result_buf) {
@@ -307,5 +337,13 @@ void Httpd::unimplemented(char* result_buf) {
     strcpy(result_buf, temp);
 }
 
+void Httpd::addHttpHeader(char *result_buf, char *tempbuf) {
+    char* success_header = "HTTP/1.1 200 OK\r\n"
+            "Server: huangliang's Server\r\n"
+            "Content-Type: text/html\r\n"
+            "\r\n";
+    size_t len = strlen(success_header);
+    strncpy(result_buf, success_header, len);
+    strcpy(result_buf+len, tempbuf);
+}
 
-//}

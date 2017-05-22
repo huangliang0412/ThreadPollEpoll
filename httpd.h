@@ -36,11 +36,11 @@ public:
     void server_innererror(char*);  //服务器错误
     void not_found(char*);        // 404错误
     //char* success_header();    //200 ok
-
+    void addHttpHeader(char*, char*);
     void read_htmlfile(FILE*, char*);      //读取html文件
     void unimplemented(char* buf);      //请求方法没有实现
     void static_html(const char*, char*);       //返回静态页面
-    void execute_cgi(const char*, const char*, const char*, char*);         //调用exec函数执行cgi脚本
+    void execute_cgi(const char*, const char*, const char*, char*, char*);         //调用exec函数执行cgi脚本
 
 
 };
