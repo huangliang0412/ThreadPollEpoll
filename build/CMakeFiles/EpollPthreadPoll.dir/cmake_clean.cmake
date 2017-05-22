@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o"
   "CMakeFiles/EpollPthreadPoll.dir/task.cpp.o"
   "CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o"
+  "CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o"
   "EpollPthreadPoll.pdb"
   "EpollPthreadPoll"
 )

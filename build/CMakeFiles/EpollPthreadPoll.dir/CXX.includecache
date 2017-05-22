@@ -38,6 +38,28 @@ string
 string.h
 -
 
+/home/huangliang/PthreadPollEpoll/httpd.cpp
+httpd.h
+/home/huangliang/PthreadPollEpoll/httpd.h
+
+/home/huangliang/PthreadPollEpoll/httpd.h
+stdio.h
+-
+ctype.h
+-
+string.h
+-
+sys/stat.h
+-
+unistd.h
+-
+stdlib.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+
 /home/huangliang/PthreadPollEpoll/main.cpp
 iostream
 -
@@ -49,6 +71,8 @@ epoll.h
 /home/huangliang/PthreadPollEpoll/epoll.h
 pthreadpoll.h
 /home/huangliang/PthreadPollEpoll/pthreadpoll.h
+httpd.h
+/home/huangliang/PthreadPollEpoll/httpd.h
 errexit.h
 /home/huangliang/PthreadPollEpoll/errexit.h
 

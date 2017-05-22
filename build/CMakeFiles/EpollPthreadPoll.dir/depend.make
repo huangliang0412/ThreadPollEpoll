@@ -9,9 +9,13 @@ CMakeFiles/EpollPthreadPoll.dir/epoll.cpp.o: ../epoll.cpp
 CMakeFiles/EpollPthreadPoll.dir/epoll.cpp.o: ../epoll.h
 CMakeFiles/EpollPthreadPoll.dir/epoll.cpp.o: ../errexit.h
 
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o: ../httpd.cpp
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o: ../httpd.h
+
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../condvar.h
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../epoll.h
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../errexit.h
+CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../httpd.h
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../main.cpp
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../mutex.h
 CMakeFiles/EpollPthreadPoll.dir/main.cpp.o: ../pthreadpoll.h

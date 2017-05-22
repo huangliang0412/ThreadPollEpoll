@@ -3,15 +3,18 @@
 //
 #include "httpd.h"
 
+Httpd::Httpd() {}
+
 int Httpd::get_line(char **data, char* buf) {
     if(**data == NULL && *data == NULL)
         return 0;
     size_t i = 0;
-    while(**data != '\n') {
+    while(**data != '\r') {
         buf[i++] = **data;
         (*data)++;
     }
     buf[i] = '\0';
+    (*data)++;
     (*data)++;
     return i + 1;
 }
@@ -31,6 +34,10 @@ char* Httpd::accept_request(char *data) {
     size_t j = 0;
 
     numchars = get_line(&data, buf);
+    //*data = '\0';
+    printf("http头%s\n", buf);
+    //if(cgi == 0)
+      //  return NULL;
     for(; i < 10; ++i) {
         if(buf[i] == ' ') {
             buf[i] = '\0';
@@ -40,11 +47,13 @@ char* Httpd::accept_request(char *data) {
             method[i] = buf[i];
         }
     }
-    j = i;
+    printf("method: %s", method);
+    printf("--------\n");
+    j = ++i;
     /* 目前只支持get 和　post方法*/
     if(strcasecmp(method, "GET") && strcasecmp(method, "POST")) {
-        unimplemented();
-        return NULL;
+        unimplemented(result_buf);
+        return result_buf;
     }
 
     /*如果支持POST方法,开启cgi*/
@@ -60,6 +69,7 @@ char* Httpd::accept_request(char *data) {
         url[i++] = buf[j++];
     }
     url[i] = '\0';
+    printf("url: %s\n", url);
 
     if(strcasecmp(method, "GET") == 0) {
         /* query_string 保存请求参数 index.php?r=param  问号后面的 r=param */
@@ -72,14 +82,17 @@ char* Httpd::accept_request(char *data) {
             *query_string = '\0';
             query_string++;
         }
+
     }
 
     /* 根目录在htdocs 下, 默认访问当前请求下的index.html*/
     sprintf(path, "htdocs%s", url);
+    printf("path: %s\n", path);
     //if(path[strlen(path) - 1] == '/')
     if(strlen(url) == 1 && *url == '/')
         strcat(path, "index.html");
 
+    printf("path: %s\n", path);
     /*找到文件,保存在结构体st中*/
     if(stat(path, &st) == -1) {
         //文件没有找到,丢弃所有http请求头信息
@@ -105,9 +118,9 @@ char* Httpd::accept_request(char *data) {
             static_html(path, result_buf);
 
         }
-        else
+        //else
             /*　执行cgi 程序*/
-            execute_cgi(path, method, query_string, result_buf);
+           // execute_cgi(path, method, query_string, result_buf);
     }
 
     return result_buf;
@@ -116,6 +129,7 @@ char* Httpd::accept_request(char *data) {
 /* 返回　400 */
 void Httpd::bad_request(char* buf) {
     char* temp = "HTTP/1.1 400 BAD REQUEST\r\n"
+            "Server: huangliang'server\r\n"
             "Content-type: text/html\r\n"
             "\r\n"
             "<p>Your browser sent a bad request</p>\r\n";
@@ -126,6 +140,7 @@ void Httpd::bad_request(char* buf) {
 void Httpd::server_innererror(char* buf) {
     //char buf[BUF_MAX_SIZE] =
     char* temp = "HTTP/1.1 500 Internal Server Error\r\n"
+            "Server: huangliang'server\r\n"
             "Content-type: text/html\r\n"
             "\r\n"
             "<p>Server error</p>\r\n";
@@ -161,11 +176,18 @@ void Httpd::read_htmlfile(FILE *fp, char* result_buf) {
             "Server: huangliang's Server\r\n"
             "Content-Type: text/html\r\n"
             "\r\n";
+    char buf[LINE_LEN];
+    char* cursor = result_buf;
     size_t len = strlen(success_header);
+    cursor += len;
     strncpy(result_buf, success_header, len);
-    while(!feof(fp)) {
-        fgets(result_buf + len, BUF_MAX_SIZE - len, fp);
+    while(fgets(buf, LINE_LEN, fp)) {
+        //fgets(result_buf + len, BUF_MAX_SIZE - len, fp);
+        size_t len = strlen(buf);
+        strncpy(cursor, buf, len);
+        cursor += len;
     }
+    *(++cursor) = '\0';
 }
 //返回静态文件
 void Httpd::static_html(const char* filename, char* result_buf) {
@@ -271,8 +293,19 @@ void Httpd::execute_cgi(const char* path, const char *method,
         close(cgi_input[1]);
         /* 等待子进程退出 */
         waitpid(pid, &status, 0);
-    }
-
-
-
 }
+
+void Httpd::unimplemented(char* result_buf) {
+    char *temp = "HTTP/1.0 501 Method Not Implemented\r\n"
+            "Server: huangliang's server\r\n"
+            "Content-Type: text/html\r\n"
+            "\r\n"
+            "<HTML><HEAD><TITLE>Method Not Implemented\r\n"
+            "</TITLE></HEAD>\r\n"
+            "<BODY><P>HTTP request method not supported.\r\n"
+            "</BODY></HTML>\r\n";
+    strcpy(result_buf, temp);
+}
+
+
+//}

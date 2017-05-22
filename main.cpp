@@ -3,10 +3,11 @@
 #include "tcpsocket.h"
 #include "epoll.h"
 #include "pthreadpoll.h"
+#include "httpd.h"
 //#include <>
 #include "errexit.h"
 using namespace std;
-const int MAXDATASIZE = 1024;
+const int MAXDATASIZE = 40960;
 struct ARG {
     int connfd;
     char message[MAXDATASIZE];
@@ -17,6 +18,7 @@ static ARG* shareMemory = new ARG();
 static pthread_mutex_t mtx = PTHREAD_MUTEX_INITIALIZER;
 
 Epoll* SocketEpoll = new Epoll;
+Httpd* HttpServer = new Httpd;
 
 ARG* read_message(int fd) {
     char recvbuf[MAXDATASIZE];
@@ -50,10 +52,17 @@ void handler(void* arg) {
     //cout << length << endl;
     int s;
     char reverseDate[MAXDATASIZE];
+    HttpServer->accept_request(messageDate->message);
+    strcpy(reverseDate,HttpServer->accept_request(messageDate->message));
+    printf("调试信息\n");
+    printf("%s\n", reverseDate);
+    /*
     for(int i= 0; i < length; ++i) {
        reverseDate[i] = messageDate->message[length-i-1];
     }
     reverseDate[length] = '\0';
+    */
+    printf("%s\n", reverseDate);
     s = pthread_mutex_lock(&mtx);
     if(s != 0)
         errExit("share memory lock error");
@@ -107,8 +116,8 @@ int main(int argc, char *argv[])
               else if(SocketEpoll->isWriteAvailable(i)) {
                   int sockfd = SocketEpoll->getEventDataFd(i);
                   send(shareMemory->connfd, shareMemory->message, strlen(shareMemory->message), 0);
-
-                  SocketEpoll->ModReadEpollList(sockfd);
+                  close(sockfd);
+                  //SocketEpoll->ModReadEpollList(sockfd);
               }
           }
           //tPoll->pthreads_join();
@@ -122,5 +131,7 @@ int main(int argc, char *argv[])
     tPoll = NULL;
     delete(SocketEpoll);
     SocketEpoll = NULL;
+    delete(HttpServer);
+    HttpServer = NULL;
     return 0;
 }

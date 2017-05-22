@@ -210,6 +210,29 @@ CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o.provides: CMakeFiles/EpollPthrea
 
 CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o.provides.build: CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o
 
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o: CMakeFiles/EpollPthreadPoll.dir/flags.make
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o: ../httpd.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huangliang/PthreadPollEpoll/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o -c /home/huangliang/PthreadPollEpoll/httpd.cpp
+
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huangliang/PthreadPollEpoll/httpd.cpp > CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.i
+
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huangliang/PthreadPollEpoll/httpd.cpp -o CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.s
+
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.requires:
+.PHONY : CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.requires
+
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.provides: CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EpollPthreadPoll.dir/build.make CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.provides.build
+.PHONY : CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.provides
+
+CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.provides.build: CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o
+
 # Object files for target EpollPthreadPoll
 EpollPthreadPoll_OBJECTS = \
 "CMakeFiles/EpollPthreadPoll.dir/condvar.cpp.o" \
@@ -218,7 +241,8 @@ EpollPthreadPoll_OBJECTS = \
 "CMakeFiles/EpollPthreadPoll.dir/mutex.cpp.o" \
 "CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o" \
 "CMakeFiles/EpollPthreadPoll.dir/task.cpp.o" \
-"CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o"
+"CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o" \
+"CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o"
 
 # External object files for target EpollPthreadPoll
 EpollPthreadPoll_EXTERNAL_OBJECTS =
@@ -230,6 +254,7 @@ EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/mutex.cpp.o
 EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o
 EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/task.cpp.o
 EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o
+EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o
 EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/build.make
 EpollPthreadPoll: CMakeFiles/EpollPthreadPoll.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable EpollPthreadPoll"
@@ -246,6 +271,7 @@ CMakeFiles/EpollPthreadPoll.dir/requires: CMakeFiles/EpollPthreadPoll.dir/mutex.
 CMakeFiles/EpollPthreadPoll.dir/requires: CMakeFiles/EpollPthreadPoll.dir/pthreadpoll.cpp.o.requires
 CMakeFiles/EpollPthreadPoll.dir/requires: CMakeFiles/EpollPthreadPoll.dir/task.cpp.o.requires
 CMakeFiles/EpollPthreadPoll.dir/requires: CMakeFiles/EpollPthreadPoll.dir/tcpsocket.cpp.o.requires
+CMakeFiles/EpollPthreadPoll.dir/requires: CMakeFiles/EpollPthreadPoll.dir/httpd.cpp.o.requires
 .PHONY : CMakeFiles/EpollPthreadPoll.dir/requires
 
 CMakeFiles/EpollPthreadPoll.dir/clean:
