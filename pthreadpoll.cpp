@@ -60,21 +60,21 @@ int ThreadPoll::destroy_threadpoll() {
 void* ThreadPoll::excute_thread() {
     Task* task = NULL;
     while(true) {
-        m_cond_mutex.lock();
+        m_task_mutex.lock();
         while((m_pool_state != STOP) && m_task.empty()) {
             //  m_task_convar.waitCond(m_task_mutex.getMutexptr());
-            m_task_convar.waitCond(m_cond_mutex.getMutexptr());
+            m_task_convar.waitCond(m_task_mutex.getMutexptr());
         }
 
         if(m_pool_state == STOP) {
             //m_task_mutex.unlock();
-            m_cond_mutex.unlock();
+            m_task_mutex.unlock();
             pthread_exit(NULL);
         }
         task = m_task.front();
         m_task.pop_front();
         //m_task_mutex.unlock();
-        m_cond_mutex.unlock();
+        m_task_mutex.unlock();
         task->run();
         delete task;
     }
