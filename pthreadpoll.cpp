@@ -7,12 +7,28 @@ const int DEFAULT_POOL_SIZE = 10;
 const int START = 0;
 const int STOP = 1;
 
+ThreadPoll* ThreadPoll::instance = NULL;
+
+ThreadPoll* ThreadPoll::getThreadPoll() {
+    if(instance == NULL)
+        instance = new ThreadPoll();
+    return instance;
+}
+
+ThreadPoll* ThreadPoll::getThreadPoll(int pool_size) {
+    if(instance == NULL)
+        instance = new ThreadPoll(pool_size);
+    return instance;
+}
+
 ThreadPoll::ThreadPoll() : m_pool_size(DEFAULT_POOL_SIZE) {}
 
 ThreadPoll::ThreadPoll(int pool_size) : m_pool_size(pool_size) {}
 
 ThreadPoll::~ThreadPoll() {
     destroy_threadpoll();
+    delete this;
+    instance = NULL;
 }
 
 extern "C"

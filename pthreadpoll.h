@@ -14,8 +14,10 @@
 
 class ThreadPoll {
 public:
-    ThreadPoll();
-    ThreadPoll(int pool_size);
+    static ThreadPoll* getThreadPoll();
+    static ThreadPoll* getThreadPoll(int pool_size);
+    //ThreadPoll();
+    //ThreadPoll(int pool_size);
     ~ThreadPoll();
 
     int initialize_threadpoll();
@@ -27,6 +29,11 @@ public:
 
 
 private:
+    ThreadPoll();
+    ThreadPoll(int pool_size);
+    ThreadPoll(const ThreadPoll&);
+    ThreadPoll& operator = (const ThreadPoll&);
+    static ThreadPoll *instance;
     int m_pool_size;
     Mutex m_task_mutex;
     Mutex m_cond_mutex;
