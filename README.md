@@ -1,8 +1,8 @@
 # HTTP服务器
 ## 服务器架构
 
->* 使用Socket + pthreadpoll + epoll IO 多路复用，实现server高并发
->* http 服务器使用cgi程序，处理动态页面请求
+>* 使用Socket + pthreadpool + epoll IO 多路复用，实现server高并发
+>* http 服务器使用cgi程序，处理动态页面请求o
 >* 使用 C++　封装 Socket 线程池模型　Epoll 模型　Http协议
 
 ## 模型的核心：
